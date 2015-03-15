@@ -7,10 +7,17 @@
 
 <script type="text/jsx">
   // Define a `class`
-  var HelloWorld = React.createClass({});
+  var HelloWorld = React.createClass({
+    render: function() {
+      return <div>
+        Hello World!
+      </div>
+    }
+  });
 
   // React, please render this class
   var element = React.createElement(HelloWorld);
 
   // React, after you render this class, please place it in my body tag
+  React.render(element, document.body);
 </script>
