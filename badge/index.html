@@ -10,14 +10,20 @@
   // Define a `class`
   var Badge = React.createClass({
     render: function() {
-      return <button class="btn btn-primary" type="button">
-        Messages <span class="badge">4</span>
+
+      return <button className="btn btn-primary" type="button">
+        {this.props.title} <span className="badge">{this.props.number}</span>
       </button>
     }
   });
 
+  var options = {
+    title: 'Sent',
+    number: 12
+  };
+
   // React, please render this class
-  var element = React.createElement(Badge);
+  var element = React.createElement(Badge, options);
 
   // React, after you render this class, please place it in my body tag
   React.render(element, document.body);
