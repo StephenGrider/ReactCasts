@@ -9,11 +9,14 @@ var App = React.createClass({
   mixins: [ ReactFire ],
   getInitialState: function() {
     return {
-      items: {}
+      items: {},
+      loaded: false
     }
   },
   componentWillMount: function() {
-    this.bindAsObject(new Firebase(rootUrl + 'items/'), 'items');
+    fb = new Firebase(rootUrl + 'items/');
+    this.bindAsObject(fb, 'items');
+    fb.on('value', this.handleDataLoaded);
   },
   render: function() {
     return <div className="row panel panel-default">
@@ -22,9 +25,14 @@ var App = React.createClass({
           To-Do List
         </h2>
         <Header itemsStore={this.firebaseRefs.items} />
-        <List items={this.state.items} />
+        <div className={"content " + (this.state.loaded ? 'loaded' : '')}>
+          <List items={this.state.items} />
+        </div>
       </div>
     </div>
+  },
+  handleDataLoaded: function(){
+    this.setState({loaded: true});
   }
 });
 
