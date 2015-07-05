@@ -16,7 +16,7 @@ module.exports = React.createClass({
     Actions.getImage(this.props.params.id);
   },
   render: function() {
-    return <div>
+    return <div className="image-detail">
       {this.state.image ? this.renderContent() : null}
     </div>
   },
