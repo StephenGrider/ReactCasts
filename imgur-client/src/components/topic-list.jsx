@@ -19,12 +19,11 @@ module.exports = React.createClass({
   },
   render: function() {
     return <div className="list-group">
-      Topic List
       {this.renderTopics()}
     </div>
   },
   renderTopics: function() {
-    return this.state.topics.map(function(topic){
+    return this.state.topics.slice(0, 4).map(function(topic){
       return <Link to={"topics/" + topic.id} className="list-group-item" key={topic.id}>
         <h4>{topic.name}</h4>
         <p>{topic.description}</p>
