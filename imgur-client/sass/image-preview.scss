@@ -2,6 +2,16 @@
   display: inline-block;
   position: relative;
 
+  .inset {
+    position: absolute;
+    bottom: 5px;
+    left: 0px;
+    width: 100%;
+    background-color: white;
+    text-align: center;
+    opacity: .7;
+  }
+
   .glyphicon {
     position: absolute;
     top: 50%;
