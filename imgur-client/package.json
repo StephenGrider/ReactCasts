@@ -21,7 +21,8 @@
     "react-router": "^1.0.0-beta2",
     "reactify": "^1.1.0",
     "vinyl-source-stream": "^1.1.0",
-    "watchify": "^2.4.0"
+    "watchify": "^2.4.0",
+    "whatwg-fetch": "^0.9.0"
   },
   "devDependencies": {}
 }
