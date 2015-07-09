@@ -7,7 +7,7 @@ in a completed state, or check out the changes that were made in a particular se
 by clicking on one of the links below.
 
 | Section Number | Section Name | Link to Commit |
-|---------------------------------------------------|------------|
+|---------------------------------------------------|------------| --- |
 |	1	|	Introduction                                                                    	|		|
 |	2	|	JSX Markup in Our Views                                                         	|		|
 |	3	|	First Application - Basic Building Blocks                                       	|	[6eac86c](https://github.com/StephenGrider/ReactCasts/commit/6eac86c)	|
