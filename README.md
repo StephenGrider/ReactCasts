@@ -11,7 +11,7 @@ by clicking on one of the links below.
 |	1	|	Introduction                                                                    	|		|
 |	2	|	Link to Github Repository	|		|
 |	3	|	JSX Markup in Our Views                                                         	|		|
-|	4	|	First Application - Basic Building Blocks                                       	|	[6eac86c](https://github.com/StephenGrider/ReactCasts/commit/6eac86c)	|
+|	4	|	First Application - Basic Building Blocks                                       	|	[6eac86c](https://github.com/StephenGrider/ReactCasts/commit/c5b1923)	|
 |	5	|	First Application - Creating a React Class                                      	|	[8ee74dd](https://github.com/StephenGrider/ReactCasts/commit/8ee74dd)	|
 |	6	|	First Application - Showing Content                                             	|	[df8b9ed](https://github.com/StephenGrider/ReactCasts/commit/df8b9ed)	|
 |	7	|	Exploring Props - Customizing Views                                             	|	[d67b329](https://github.com/StephenGrider/ReactCasts/commit/d67b329)	|
